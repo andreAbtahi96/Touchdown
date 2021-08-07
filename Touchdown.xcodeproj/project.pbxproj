@@ -11,6 +11,14 @@
 		7DBDE37926BE66A300478255 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBDE37826BE66A300478255 /* ContentView.swift */; };
 		7DBDE37B26BE66A800478255 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DBDE37A26BE66A800478255 /* Assets.xcassets */; };
 		7DBDE37E26BE66A800478255 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DBDE37D26BE66A800478255 /* Preview Assets.xcassets */; };
+		7DBDE38B26BE678900478255 /* category.json in Resources */ = {isa = PBXBuildFile; fileRef = 7DBDE38726BE678700478255 /* category.json */; };
+		7DBDE38C26BE678900478255 /* brand.json in Resources */ = {isa = PBXBuildFile; fileRef = 7DBDE38826BE678800478255 /* brand.json */; };
+		7DBDE38D26BE678900478255 /* player.json in Resources */ = {isa = PBXBuildFile; fileRef = 7DBDE38926BE678800478255 /* player.json */; };
+		7DBDE38E26BE678900478255 /* product.json in Resources */ = {isa = PBXBuildFile; fileRef = 7DBDE38A26BE678900478255 /* product.json */; };
+		7DBDE39C26BE69CC00478255 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBDE39B26BE69CC00478255 /* Constant.swift */; };
+		7DBDE3A026BE6AF400478255 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBDE39F26BE6AF400478255 /* FooterView.swift */; };
+		7DBDE3A526BE714100478255 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBDE3A426BE714100478255 /* NavigationBarView.swift */; };
+		7DBDE3A826BE72C800478255 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBDE3A726BE72C800478255 /* LogoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +28,14 @@
 		7DBDE37A26BE66A800478255 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DBDE37D26BE66A800478255 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7DBDE37F26BE66A800478255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DBDE38726BE678700478255 /* category.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = category.json; sourceTree = "<group>"; };
+		7DBDE38826BE678800478255 /* brand.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = brand.json; sourceTree = "<group>"; };
+		7DBDE38926BE678800478255 /* player.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = player.json; sourceTree = "<group>"; };
+		7DBDE38A26BE678900478255 /* product.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = product.json; sourceTree = "<group>"; };
+		7DBDE39B26BE69CC00478255 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		7DBDE39F26BE6AF400478255 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
+		7DBDE3A426BE714100478255 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
+		7DBDE3A726BE72C800478255 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +68,12 @@
 		7DBDE37526BE66A300478255 /* Touchdown */ = {
 			isa = PBXGroup;
 			children = (
-				7DBDE37626BE66A300478255 /* TouchdownApp.swift */,
-				7DBDE37826BE66A300478255 /* ContentView.swift */,
+				7DBDE39326BE68CF00478255 /* App */,
+				7DBDE39426BE692100478255 /* View */,
+				7DBDE39026BE679800478255 /* Data */,
+				7DBDE39726BE694300478255 /* Model */,
+				7DBDE39826BE694800478255 /* Extension */,
+				7DBDE39926BE695300478255 /* Utility */,
 				7DBDE37A26BE66A800478255 /* Assets.xcassets */,
 				7DBDE37F26BE66A800478255 /* Info.plist */,
 				7DBDE37C26BE66A800478255 /* Preview Content */,
@@ -67,6 +87,74 @@
 				7DBDE37D26BE66A800478255 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7DBDE39026BE679800478255 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7DBDE38A26BE678900478255 /* product.json */,
+				7DBDE38826BE678800478255 /* brand.json */,
+				7DBDE38726BE678700478255 /* category.json */,
+				7DBDE38926BE678800478255 /* player.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		7DBDE39326BE68CF00478255 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7DBDE37826BE66A300478255 /* ContentView.swift */,
+				7DBDE37626BE66A300478255 /* TouchdownApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7DBDE39426BE692100478255 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7DBDE39526BE693200478255 /* Home */,
+				7DBDE39626BE693A00478255 /* Detail */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7DBDE39526BE693200478255 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7DBDE39F26BE6AF400478255 /* FooterView.swift */,
+				7DBDE3A426BE714100478255 /* NavigationBarView.swift */,
+				7DBDE3A726BE72C800478255 /* LogoView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7DBDE39626BE693A00478255 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		7DBDE39726BE694300478255 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7DBDE39826BE694800478255 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		7DBDE39926BE695300478255 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				7DBDE39B26BE69CC00478255 /* Constant.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +214,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DBDE38D26BE678900478255 /* player.json in Resources */,
+				7DBDE38B26BE678900478255 /* category.json in Resources */,
+				7DBDE38C26BE678900478255 /* brand.json in Resources */,
 				7DBDE37E26BE66A800478255 /* Preview Assets.xcassets in Resources */,
 				7DBDE37B26BE66A800478255 /* Assets.xcassets in Resources */,
+				7DBDE38E26BE678900478255 /* product.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +231,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DBDE37926BE66A300478255 /* ContentView.swift in Sources */,
+				7DBDE3A826BE72C800478255 /* LogoView.swift in Sources */,
+				7DBDE3A026BE6AF400478255 /* FooterView.swift in Sources */,
 				7DBDE37726BE66A300478255 /* TouchdownApp.swift in Sources */,
+				7DBDE39C26BE69CC00478255 /* Constant.swift in Sources */,
+				7DBDE3A526BE714100478255 /* NavigationBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +365,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Touchdown/Preview Content\"";
+				DEVELOPMENT_TEAM = 476W3V97E8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Touchdown/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -290,6 +387,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Touchdown/Preview Content\"";
+				DEVELOPMENT_TEAM = 476W3V97E8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Touchdown/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
