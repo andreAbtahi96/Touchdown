@@ -14,7 +14,7 @@ struct NavigationBarView: View {
     
     //  MARK: - BODY
     var body: some View {
-        HStack{
+        HStack(){
             Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
                 Image(systemName: "magnifyingglass")
                     .font(.title)
