@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  ContentView.swift AKA storefront
 //  Touchdown
 //
 //  Created by Andre Abtahi on 8/6/21.
@@ -27,6 +27,17 @@ struct ContentView: View {
                         FeaturedTabView()
                             .padding(.vertical, 20)
                             .frame(height: UIScreen.main.bounds.width / 1.475)
+                        
+                        CategoryGridView()
+                        
+                        TitleView(title: "Helmets")
+                        
+                        LazyVGrid(columns: gridLayout, spacing: 15, content: {
+                            ForEach(products){ product in
+                                ProductItemView(product: product)
+                            }// LOOP
+                        })// LAZY GRID
+                        .padding(15)
                         
                         FooterView()
                             .padding(.horizontal)
