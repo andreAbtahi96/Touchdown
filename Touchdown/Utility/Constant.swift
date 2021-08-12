@@ -34,6 +34,7 @@ var gridLayout: [GridItem]{
 }// GRID LAYOUT
 
 //  UX
+let feedback = UIImpactFeedbackGenerator(style: .medium)
 
 //  API
 //  IMAGE
